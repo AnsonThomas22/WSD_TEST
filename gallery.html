@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        h3{
+            background-color: #888;
+            margin:10px;
+            padding: 10px;
+
+
+
+        } 
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .item {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            padding-left:20px;
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .mimage1{
+            width:auto;
+            height: auto;
+            margin:10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/Project1.html">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Project 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h3>Projects </h3>
+   
+        
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <!-- Project 1 -->
+        <div class="item">
+            <img src="resources/image1.jpg" alt="Project 1" class="img-fluid" onclick="openModal('modal1')">
+            <div class="modal" id="modal1">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <h2>Solar panel</h2>
+                    <p>This is a project on solar panel. The development and architecture of the panels was researchedd in this project</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="item">
+            <img src="resources/image2.jpg" alt="Project 2" class="img-fluid" onclick="openModal('modal2')">
+            <div class="modal" id="modal2">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <h2>Air Pollution</h2>
+                    <img src="/resources/image2.jpg" class="mimage1">
+                    <p>This is a description of Project 2.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="item">
+            <img src="resources/image3.jpg" alt="Project 3" class="img-fluid" onclick="openModal('modal2')">
+            <div class="modal" id="modal3">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <h2>Air Pollution</h2>
+                    <img src="/resources/image3.jpg" class="mimage1">
+                    <p>This is a description of Project 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="item">
+            <img src="resources/image4.jpg" alt="Project 4" class="img-fluid" onclick="openModal('modal2')">
+            <div class="modal" id="modal4">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <h2>Air Pollution</h2>
+                    <img src="/resources/image4.jpg" class="mimage1">
+                    <p>This is a description of Project 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Project 5 -->
+        <div class="item">
+            <img src="resources/image5.cms" alt="Project 5" class="img-fluid" onclick="openModal('modal2')">
+            <div class="modal" id="modal4">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <h2>Air Pollution</h2>
+                    <img src="/resources/image5.cms" class="mimage1">
+                    <p>This is a description of Project 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <!-- Project 6 -->
+        <div class="item">
+            <img src="resources/image6.webp" alt="Project 6" class="img-fluid" onclick="openModal('modal2')">
+            <div class="modal" id="modal4">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <h2>Air Pollution</h2>
+                    <img src="/resources/image6.webp" class="mimage1">
+                    <p>This is a description of Project 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

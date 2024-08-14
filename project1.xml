@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project1 SYSTEM "project1.dtd">
+<?xml-model href="project1.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="Project1.xsl" type="text/xsl"?>
+
+<Project1>
+    <project id="A1">
+        <title>Car Design</title>
+        <description>Description of the car design project.</description>
+        <Technologies_used>Technology 1, Technology 2</Technologies_used>
+    </project>
+
+    <project id="A2">
+        <title>Bike Design</title>
+        <description>Description of the bike design project.</description>
+        <Technologies_used>Technology 3, Technology 4</Technologies_used>
+    </project>
+
+    <project id="A3">
+        <title>Air Pollution</title>
+        <description>Description of the air pollution project.</description>
+        <Technologies_used>Technology 5, Technology 6</Technologies_used>
+    </project>
+
+    <project id="A4">
+        <title>Solar Panel</title>
+        <description>Description of the solar panel project.</description>
+        <Technologies_used>Technology 7, Technology 8</Technologies_used>
+    </project>
+
+    <project id="A5">
+        <title>Railway System</title>
+        <description>Description of the railway system project.</description>
+        <Technologies_used>Technology 9, Technology 10</Technologies_used>
+    </project>
+
+    <project id="A6">
+        <title>Urban Planning</title>
+        <description>Description of the urban planning project.</description>
+        <Technologies_used>Technology 11, Technology 12</Technologies_used>
+    </project>
+</Project1>

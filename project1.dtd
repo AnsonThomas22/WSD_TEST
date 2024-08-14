@@ -1,0 +1,7 @@
+<!ELEMENT Project1 (project+)>
+<!ELEMENT project (title, description, Technologies_used)>
+<!ATTLIST project id ID #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT Technologies_used (#PCDATA)>
+
