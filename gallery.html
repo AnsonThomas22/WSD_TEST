@@ -37,11 +37,12 @@
 
         /* Modal styling */
         .modal {
-            display: none; /* Hidden by default */
+            display: none; 
             position: fixed;
             z-index: 1;
             left: 0;
             top: 0;
+            right:20px;
             width: 100%;
             height: 100%;
             overflow: auto;
@@ -51,7 +52,7 @@
         }
 
         .modal-content {
-            margin: 10% auto;
+            margin:100px;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
@@ -83,7 +84,9 @@
         .mimage1{
             width:auto;
             height: auto;
-            margin:10px;
+            margin: 10px;
+            margin-right:20px;
+            
 
 
         }
@@ -99,7 +102,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/gallery.html">Gallery</a>
@@ -109,7 +112,7 @@
                         Projects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Project1.html">Project 1</a>
+                        <a class="dropdown-item" href="/Project1.xml">Project 1</a>
                         <a class="dropdown-item" href="#">Project 2</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Project 3</a>
@@ -138,7 +141,8 @@
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>
                     <h2>Solar panel</h2>
-                    <p>This is a project on solar panel. The development and architecture of the panels was researchedd in this project</p>
+                    <img src="/resources/image1.jpg" class="mimage1">
+                    <p>This is a project on solar panel. The development and architecture of the panels was researched in this project</p>
                 </div>
             </div>
         </div>
@@ -158,12 +162,12 @@
 
         <!-- Project 3 -->
         <div class="item">
-            <img src="resources/image3.jpg" alt="Project 3" class="img-fluid" onclick="openModal('modal2')">
+            <img src="resources/image3.jpg" alt="Project 3" class="img-fluid" onclick="openModal('modal3')">
             <div class="modal" id="modal3">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
-                    <h2>Air Pollution</h2>
-                    <img src="/resources/image3.jpg" class="mimage1">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <h2>Corona</h2>
+                    <img src="resources/image3.jpg" class="mimage1">
                     <p>This is a description of Project 3.</p>
                 </div>
             </div>
@@ -171,42 +175,42 @@
 
         <!-- Project 4 -->
         <div class="item">
-            <img src="resources/image4.jpg" alt="Project 4" class="img-fluid" onclick="openModal('modal2')">
+            <img src="resources/image4.jpg" alt="Project 4" class="img-fluid" onclick="openModal('modal4')">
             <div class="modal" id="modal4">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('modal4')">&times;</span>
-                    <h2>Air Pollution</h2>
-                    <img src="/resources/image4.jpg" class="mimage1">
+                    <h2>Railway</h2>
+                    <img src="resources/image4.jpg" class="mimage1">
                     <p>This is a description of Project 4.</p>
                 </div>
             </div>
         </div>
-    </div>
+    
 
 
         <!-- Project 5 -->
         <div class="item">
-            <img src="resources/image5.cms" alt="Project 5" class="img-fluid" onclick="openModal('modal2')">
-            <div class="modal" id="modal4">
+            <img src="resources/image5.cms" alt="Project 5" class="img-fluid" onclick="openModal('modal5')">
+            <div class="modal" id="modal5">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal4')">&times;</span>
-                    <h2>Air Pollution</h2>
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <h2>Car</h2>
                     <img src="/resources/image5.cms" class="mimage1">
                     <p>This is a description of Project 4.</p>
                 </div>
             </div>
         </div>
-    </div>
+    
 
     
         <!-- Project 6 -->
         <div class="item">
-            <img src="resources/image6.webp" alt="Project 6" class="img-fluid" onclick="openModal('modal2')">
-            <div class="modal" id="modal4">
+            <img src="resources/image6.webp" alt="Project 6" class="img-fluid" onclick="openModal('modal6')">
+            <div class="modal" id="modal6">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal4')">&times;</span>
-                    <h2>Air Pollution</h2>
-                    <img src="/resources/image6.webp" class="mimage1">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                    <h2>Bike</h2>
+                    <img src="resources/image6.webp" class="mimage1">
                     <p>This is a description of Project 4.</p>
                 </div>
             </div>
